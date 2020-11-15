@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_usersresigter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorgreen"
+    tools:context="com.example.a10916.manageractivity.AddUser">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="添加用户信息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewlogo"
+            android:textColor="@color/colorred"
+            android:layout_gravity=""
+            android:textSize= "30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="学号："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagresigteraccount"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入您要添加的学号"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputlresigteraccount"
+            android:layout_weight="3" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp">
+        <TextView
+            android:text="姓名："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagresigtername"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="24sp"
+
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入姓名"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputlresigtername"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="密码："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagresigterpassword"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入初始化的密码"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputlresigterpassword"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="专业："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagresigteragpassword"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入用户专业"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputlresigteragpassword"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="班级："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagresigterstunumber"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入用户班级"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputlresigterstunumber"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp">
+        <TextView
+            android:text="身份证："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagresigteridcard"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:hint="请输入身份证号码"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputlresigteridcard"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:text="添加"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/commit_user"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></LinearLayout>
+</LinearLayout>

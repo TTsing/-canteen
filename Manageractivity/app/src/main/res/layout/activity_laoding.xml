@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_laoding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorgreen"
+    tools:context="com.example.a10916.manageractivity.Laoding">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical|center"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="请注意：密码为身份证后六位，如有需要，请自行修改密码"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorpurple"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/textView4"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:text="账号："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagloadingaccount"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:hint="请输入账号"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputloadingaccount"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="密码："
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/Tagloadingpassword"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:textSize="24sp"
+            android:background="@color/colorwhite"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:id="@+id/inputloadingpassword"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <Button
+            android:text="注册"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="24sp"
+            android:id="@+id/buttonresigter"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="登录"
+            android:layout_width="0dp"
+            android:textSize="24sp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/buttonloading"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:text="忘记密码"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/forgetpassword"
+            android:gravity="center"
+            android:textColor="@color/colorred"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="修改密码"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/colorred"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:id="@+id/changepassword"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp"></LinearLayout>
+</LinearLayout>
