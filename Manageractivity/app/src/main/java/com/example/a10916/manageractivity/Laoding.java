@@ -10,10 +10,12 @@ import android.widget.Toast;
 
 import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
+import org.w3c.dom.Text;
 
 import java.util.List;
 
 public class Laoding extends AppCompatActivity implements View.OnClickListener {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +46,21 @@ public class Laoding extends AppCompatActivity implements View.OnClickListener {
                 String account = textloading.getText().toString();
                 String password = textpassword.getText().toString();
 
-                List<userbase> list = DataSupport.select("password")
+                List<userbase>list = DataSupport
                         .where("stunumber = ?",account)
                         .find(userbase.class);
-
+                if(list.isEmpty()) Toast.makeText(view.getContext(),"账号不存在",Toast.LENGTH_SHORT).show();
                 for(userbase userbase:list){
                     if(userbase.getPassword().equals(password)){
                         Toast.makeText(view.getContext(),"登录成功",Toast.LENGTH_SHORT).show();
+                        Intent intent  = new Intent(Laoding.this,fragment.class);
+                        intent.putExtra("idname",userbase.getName());
+                        intent.putExtra("stunumber",userbase.getStunumber());
+                        intent.putExtra("idcard",userbase.getIdcard());
+                        intent.putExtra("classroom",userbase.getClassroom());
+                        intent.putExtra("project",userbase.getProject());
+                        startActivity(intent);
+                        finish();
                     }
                     else{
                         textloading.setText("");
@@ -68,6 +78,7 @@ public class Laoding extends AppCompatActivity implements View.OnClickListener {
                 userbase.setProject("软件工程");
                 userbase.setClassroom("软件工程1802班");
                 userbase.setPassword(userbase.getIdcard().toString().substring(userbase.getIdcard().toString().length()-6,userbase.getIdcard().toString().length()));
+               
                 userbase.save();
                 break;
             case R.id.changepassword:
@@ -83,4 +94,3 @@ public class Laoding extends AppCompatActivity implements View.OnClickListener {
         }
     }
 }
-

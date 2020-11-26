@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a10916.manageractivity">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
@@ -28,7 +30,27 @@
         </activity>
         <activity android:name=".Laoding" />
         <activity android:name=".alterpassword" />
-        <activity android:name=".forgetpassword"></activity>
+        <activity android:name=".forgetpassword" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.a10916.manageractivity.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Mydialog" />
+        <activity android:name=".DeleteMenu" />
+        <activity android:name=".ViewMenu" />
+        <activity android:name=".inlinefrag" />
+        <activity android:name=".surelineFrag" />
+        <activity android:name=".usermanager" />
+        <activity android:name=".fragment" />
+        <activity android:name=".inlineFragment" />
+        <activity android:name=".surelineFrag"></activity>
     </application>
 
 </manifest>

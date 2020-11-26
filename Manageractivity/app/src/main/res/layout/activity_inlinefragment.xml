@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inline_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="@color/colorgreen"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:gravity="center_horizontal|center|center_vertical"
+    tools:context="com.example.a10916.manageractivity.inlineFragment">
+
+    <Button
+        android:text="点击排队取号"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:id="@+id/inline" />
+</LinearLayout>

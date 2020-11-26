@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="用户信息"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_stunumber_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="学    号" />
+
+        <EditText
+            android:id="@+id/et_stunumber_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpurple"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ems="20" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_username_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="姓    名" />
+
+        <EditText
+            android:id="@+id/et_username_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpurple"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ems="20" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="密    码" />
+        <EditText
+            android:id="@+id/et_pwd_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpurple"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ems="20" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_idcard_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="身份证" />
+
+        <EditText
+            android:id="@+id/et_idcard_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpurple"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ems="20" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_zhuanye_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="专    业" />
+
+        <EditText
+            android:id="@+id/et_zhuanye_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpurple"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ems="20" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_banji_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="班    级" />
+
+        <EditText
+            android:id="@+id/et_banji_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorpurple"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ems="20" >
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_ok_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/btn_cancel_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="取消" />
+    </LinearLayout>
+
+
+</LinearLayout>

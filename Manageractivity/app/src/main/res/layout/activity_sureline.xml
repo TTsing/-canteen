@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sureline_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorgreen"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical|center"
+    tools:context="com.example.a10916.manageractivity.surelineFrag">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:background="@color/colorwhite"
+        android:layout_height="350dp">
+
+        <TextView
+            android:text="您的号码为"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:id="@+id/textView10"
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary" />
+
+        <TextView
+            android:text="XX号"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:textSize="50sp"
+            android:textColor="@color/colorred" />
+
+        <TextView
+            android:text="在xx号面前还有xx位客人"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/background_dark" />
+    </LinearLayout>
+</LinearLayout>

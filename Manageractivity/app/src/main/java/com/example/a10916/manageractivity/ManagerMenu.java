@@ -34,10 +34,14 @@ public class ManagerMenu extends AppCompatActivity implements View.OnClickListen
                 startActivity(intent);
                 break;
             case R.id.Delete_Menu:
+                intent = new Intent(ManagerMenu.this,DeleteMenu.class);
+                startActivity(intent);
                 break;
-            case R.id.Modify_Menu:
-                break;
+//            case R.id.Modify_Menu:
+//                break;
             case R.id.View_Menu:
+                intent = new Intent(ManagerMenu.this,ViewMenu.class);
+                startActivity(intent);
                 break;
         }
     }

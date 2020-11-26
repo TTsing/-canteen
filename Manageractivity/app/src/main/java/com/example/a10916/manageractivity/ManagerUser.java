@@ -15,12 +15,12 @@ public class ManagerUser extends AppCompatActivity implements View.OnClickListen
         //获得控件
         Button btn_add = (Button)findViewById(R.id.Add_User);
         Button btn_delete = (Button)findViewById(R.id.Delete_User);
-        Button btn_modify = (Button)findViewById(R.id.Modify_User);
+      //  Button btn_modify = (Button)findViewById(R.id.Modify_User);
         Button btn_view = (Button)findViewById(R.id.View_User);
         //添加点击事件
         btn_add.setOnClickListener(this);
         btn_delete.setOnClickListener(this);
-        btn_modify.setOnClickListener(this);
+     //   btn_modify.setOnClickListener(this);
         btn_view.setOnClickListener(this);
     }
 
@@ -36,10 +36,10 @@ public class ManagerUser extends AppCompatActivity implements View.OnClickListen
                 intent = new Intent(ManagerUser.this, DeleteUser.class);
                 startActivity(intent);
                 break;
-            case R.id.Modify_User:
-                intent = new Intent(ManagerUser.this, ModifyUser.class);
-                startActivity(intent);
-                break;
+//            case R.id.Modify_User:
+//                intent = new Intent(ManagerUser.this, ModifyUser.class);
+//                startActivity(intent);
+//                break;
             case R.id.View_User:
                 intent = new Intent(ManagerUser.this, ViewUser.class);
                 startActivity(intent);

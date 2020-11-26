@@ -38,6 +38,8 @@ public class Operation extends AppCompatActivity  implements View.OnClickListene
                 startActivity(intent);
                 break;
             case R.id.op_manageMessage:
+                intent = new Intent(Operation.this,ManagerMessage.class);
+                startActivity(intent);
                 break;
             case R.id.op_manageSystem:
                 break;
